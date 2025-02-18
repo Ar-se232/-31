@@ -15,17 +15,9 @@
     }
 
     @keyframes neonBg {
-      0% {
-        background: linear-gradient(45deg, #000066, #0033cc, #0066ff);
-      }
-
-      50% {
-        background: linear-gradient(45deg, #0033cc, #0066ff, #000066);
-      }
-
-      100% {
-        background: linear-gradient(45deg, #000066, #0033cc, #0066ff);
-      }
+      0% { background: linear-gradient(45deg, #000066, #0033cc, #0066ff); }
+      50% { background: linear-gradient(45deg, #0033cc, #0066ff, #000066); }
+      100% { background: linear-gradient(45deg, #000066, #0033cc, #0066ff); }
     }
 
     /* ШАПКА */
@@ -110,13 +102,8 @@
     }
 
     @keyframes screenFlash {
-      0% {
-        background: black;
-      }
-
-      100% {
-        background: #000066;
-      }
+      0% { background: black; }
+      100% { background: #000066; }
     }
 
     /* ТРЕМТІННЯ */
@@ -125,13 +112,8 @@
     }
 
     @keyframes shakeEffect {
-      0% {
-        transform: translate(2px, 2px);
-      }
-
-      100% {
-        transform: translate(-2px, -2px);
-      }
+      0% { transform: translate(2px, 2px); }
+      100% { transform: translate(-2px, -2px); }
     }
 
     /* ФУТЕР */
@@ -188,26 +170,23 @@
   </footer>
 
   <script>
-    // ЧАС СЕРВЕРА
     function updateServerTime() {
       const now = new Date();
       document.getElementById('server-time').innerText = now.toLocaleTimeString('uk-UA');
     }
     setInterval(updateServerTime, 1000);
     updateServerTime();
-    // АКТИВАЦІЯ РОЗРЯДУ + ВІДКРИТТЯ СИЛКИ
+
     function activateHackMode() {
       document.body.classList.add("shock-effect");
       document.querySelector("main").classList.add("shake");
+      
       setTimeout(() => {
         document.body.classList.remove("shock-effect");
         document.querySelector("main").classList.remove("shake");
-        <a href="https://ar-se232.github.io/avtor/" target="_blank">;
-        let newTab = window.open(telegramLink, "_blank");
-        // Якщо браузер заблокував відкриття нового вікна, спробувати редирект
-        if (!newTab || newTab.closed || typeof newTab.closed === "undefined") {
-          window.location.href = telegramLink;
-        }
+        
+        window.open("https://ar-se232.github.io/avtor/", "_blank");
+        window.open("https://t.me/Scout_1212", "_blank");
       }, 2000);
     }
   </script>
